@@ -44,7 +44,7 @@
   --font-aventa: 'Aventa', system-ui, sans-serif;
   --font-dm-serif-display: 'DM Serif Display', 'Times New Roman', serif;
 
-  /* Palette from design: Verde Vela, Azul Alicia, Lila Claro, Verde Turquesa, Humo Blanco */
+  /* Design palette: Verde Vela (dark green), Azul Alicia (light blue), Lila Claro (light purple), Verde Turquesa (light green), Humo Blanco (white) */
   --verde-vela: #253534;
   --azul-alicia: #EAF7FF;
   --lila-claro: #DBDBFF;
@@ -134,7 +134,7 @@ html {
   background-color: var(--verde-vela);
 }
 .services-card {
-  background-color: #f3f7fa;
+  background-color: var(--humo-blanco);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
