@@ -121,7 +121,7 @@ html {
 }
 
 .gradient-band {
-  background-image: linear-gradient(to right, #9fc6b5, #9ccdc8, #9fd2db, #aad6eb, #bcd9f7, #bcd9f7, #bcd9f7, #bcd9f7, #aad6eb, #9fd2db, #9ccdc8, #9fc6b5);
+  background-image: linear-gradient(to right, var(--lila-claro), var(--verde-turquesa));
 }
 
 /* Hero: gradient (same as testimonial band) */
