@@ -128,3 +128,22 @@ html {
 .hero-gradient {
   background-image: radial-gradient(circle, #9fc6b5 0%, #9ccdc8 20%, #9fd2db 40%, #aad6eb 60%, #bcd9f7 80%);
 }
+
+/* Services: dark green section background */
+.services-section {
+  background-color: var(--verde-vela);
+}
+.services-card {
+  background-color: #f3f7fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hide scrollbar on services carousel (mobile) */
+.services-cards-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.services-cards-scroll::-webkit-scrollbar {
+  display: none;
+}
