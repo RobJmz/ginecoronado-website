@@ -1,0 +1,45 @@
+---
+import '../../app/globals.css'
+
+const title =
+  'Dr. Ricardo Coronado | Ginecología, Obstetricia y Colposcopía en Saltillo'
+const description =
+  'Especialista en ginecología, obstetricia y colposcopía. Escucha, calidad y atención en un ambiente seguro y de confianza. Centro Médico Muguerza, Saltillo, Coah.'
+const keywords = [
+  'ginecólogo',
+  'obstetricia',
+  'colposcopía',
+  'Saltillo',
+  'Dr. Ricardo Coronado',
+  'Muguerza',
+].join(', ')
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="theme-color" content="#253534" />
+
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+
+    <!-- Google Fonts: DM Sans & DM Serif Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..144,100..1000;1,9..144,100..1000&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="font-sans antialiased">
+    <slot />
+  </body>
+</html>
+
