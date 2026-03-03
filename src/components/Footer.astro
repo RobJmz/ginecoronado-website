@@ -105,12 +105,16 @@ const year = new Date().getFullYear()
       </div>
     </div>
 
-    <!-- Bottom bar -->
-    <div class="mt-12 pt-8 border-t border-verde-turquesa/15 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-white/40 text-xs font-sans">
-        &copy; {year} Dr. Ricardo Coronado. Todos los derechos reservados.
+    <!-- Bottom bar (matches PDF: specialty tagline + copyright) -->
+    <div class="mt-12 pt-8 border-t border-verde-turquesa/15 flex flex-col gap-4">
+      <p class="text-white/70 font-sans text-xs md:text-sm tracking-[0.2em] uppercase text-center">
+        Ginecolog&iacute;a &diams; Obstetricia &diams; Colposcop&iacute;a
       </p>
-      <div class="flex items-center gap-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-white/40 text-xs font-sans text-center md:text-left">
+          &copy; {year} Dr. Ricardo Coronado. Todos los derechos reservados.
+        </p>
+        <div class="flex items-center gap-4">
         <a
           href="https://www.instagram.com/dr.ricardo_coronado/"
           target="_blank"
@@ -141,6 +145,7 @@ const year = new Date().getFullYear()
             />
           </svg>
         </a>
+        </div>
       </div>
     </div>
   </div>

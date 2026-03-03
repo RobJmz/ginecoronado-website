@@ -3,10 +3,48 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Aventa (from font-aventa-raw, served from public/fonts/aventa) */
+@font-face {
+  font-family: 'Aventa';
+  src: url('/fonts/aventa/Aventa-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aventa';
+  src: url('/fonts/aventa/Aventa-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aventa';
+  src: url('/fonts/aventa/Aventa-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aventa';
+  src: url('/fonts/aventa/Aventa-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aventa';
+  src: url('/fonts/aventa/Aventa-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-dm-sans: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-aventa: 'Aventa', system-ui, sans-serif;
   --font-dm-serif-display: 'DM Serif Display', 'Times New Roman', serif;
 
+  /* Palette from design: Verde Vela, Azul Alicia, Lila Claro, Verde Turquesa, Humo Blanco */
   --verde-vela: #253534;
   --azul-alicia: #EAF7FF;
   --lila-claro: #DBDBFF;
@@ -36,7 +74,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-dm-sans), 'DM Sans', sans-serif;
+  --font-sans: var(--font-aventa), 'Aventa', sans-serif;
   --font-serif: var(--font-dm-serif-display), 'DM Serif Display', serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
@@ -84,4 +122,9 @@ html {
 
 .gradient-band {
   background-image: linear-gradient(to right, #9fc6b5, #9ccdc8, #9fd2db, #aad6eb, #bcd9f7, #bcd9f7, #bcd9f7, #bcd9f7, #aad6eb, #9fd2db, #9ccdc8, #9fc6b5);
+}
+
+/* Hero: gradient (same as testimonial band) */
+.hero-gradient {
+  background-image: radial-gradient(circle, #9fc6b5 0%, #9ccdc8 20%, #9fd2db 40%, #aad6eb 60%, #bcd9f7 80%);
 }
